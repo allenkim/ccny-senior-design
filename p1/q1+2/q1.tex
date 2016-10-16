@@ -62,8 +62,70 @@ $$
 L(v_i) \geq L(v_j) \qquad (i < j)
 $$
 
-for all $i$ and $j$.
+for all $i$ and $j$. For merged symbol, $L$ is the number of times a symbol has been merged after the merged symbol was created. Therefore, 
+$$
+L(v_{1,2}) = L(v_{1}) - 1 = L(v_{2}) - 1 
+$$
 
-\section{Proof}
+\section{Motivation for Proof}
+
+\textbf{ Lemma 1.} Suppose we have a set of $n$ symbols, $v_1, v_2, \ldots v_n$ with certain frequencies $f_1, f_2 \ldots f_n$. Let us assume that, without loss of generality, that $f_1 \leq f_2 \leq f_3 \ldots f_n$. Now, let us add an additional property.
+
+Assume that
+$$
+f_1 + f_2 \geq f_n
+$$
+
+Then $L(v_1) \geq L(v_2) \geq \ldots \geq L(v_n)$. Furthermore, $L(v_1) - L(v_n) \leq 1$.
+
+\begin{proof}
+	The proof is by induction. For the base case, suppose then there are three symbols $v_1, v_2$ and $v_3$. Then, $v_1$ and $v_2$ will be merged together to get $v_{1,2}$, and that in turn will be merged with $v_3$ to get $v_{3,1,2}$. Therefore, $L(v_1) = L(v_2) = 2$ and $L(v_3) = 1$. This satisfies the inequality $L(v_1) \geq L(v_2) \geq L(v_3)$ and $L(v_1) - L(v_3) = 1 \leq 1$. 
+
+
+  will be the end of the Huffman encoding process. $L(v_1) = L(v_2) = 1$, so $L(v_1) \geq L(v_2)$ and $L(v_1) - L(v_2) = 0 \leq 1$.
+Now, suppose that the theorem were true for $n-1$ symbols. Now, we consider the case where there are $n$ symbols in the queue.
+
+$$
+Q = \left[ v_1, v_2, \ldots, v_n \right]
+$$ 
+
+In the first step of the Huffman Encoding problem, the first two symbols are merged together to get $v_{1, 2}$ whose frequency is $f_{1,2} = f_1 + f_2$. Due to the property above, the resulting queue will look like this.
+
+$$
+Q = \left[ v_3, v_4, \ldots v_n, v_{1,2} \right]
+$$
+
+Now, we can see that this is a queue with $n-1$ symbols. Furthermore, it is true that $f_3 + f_4 \geq f_{1,2} = f_1 + f_2$. So, if we make the replacement
+
+\begin{align*}
+	w_1 = v_3 &\qquad g_1 = f_3\\
+	w_2 = v_4 &\qquad g_2 = f_4\\
+	\vdots
+	w_{n-2} = v_n &\qquad g_{n-2} = f_n\\
+	w_{n-1} = v_{1,2} &\qquad g_{n-1} = f_{1,2} = f_1 + f_2	
+\end{align*}
+
+Then, we see that we have a set of $n-1$ symbols such that $w_1 + w_2 \geq w_{n-1}$, and whose frequencies satisfy $g_1 \leq g_2 \leq \vdots g_{n-1}$. Therefore, by induction it must be true that 
+
+$$
+L(w_1) \geq L(w_2) \ldots L(w_{n-2}) \geq \vdots L(w_{n-1})
+$$
+
+Substituting the $v$ terms back, we get
+
+$$
+L(v_3) \geq L(v_4) \ldots L(v_n) \geq L(v_{1,2})
+$$
+
+However, we also know that $L(w_1) - L(w_n) \leq 1$. Therefore, $L(v_3) - L(v_{1,2}) \leq 1$. Here, there are two cases.
+
+\textit{Case 1}
+$L(v_3) - L(v_{1,2}) = 1$. Therefore, $L(v_3) = L(v_{1,2}) + 1 = L(v_1) = L(v_2)$. Since $L(v_3) - L(v_{1,2}) = L(w_1) - L(w_{n-1}) = 1$, we can say that $L(w_1) - L(w_{n-2}) = L(v_3) - L(v_n) \leq 1$. Since $L(v_3) = L(v_1)$, then $L(1) - L(n) \leq 1$ and $L(v_1) \leq L(v_2) \leq \ldots \leq L(v_n)$.
+
+\textit{Case 2}
+$L(v_3) - L(v_{1,2}) = 0$. Therefore, $L(v_3) + 1 = L(v_1) + L(v_2)$. Since $L(v_3) - L(v_{1,2}) = L(w_1) - L(w_{n-1}) = 0$, we can say that $L(w_1) - L(w_{n-2}) = L(v_3) - L(v_n) = 0$. Therefore, $L(v_1) - L(v_n)  = 1 \leq 1$, and $L(v_1) \leq L(v_2) \leq \ldots \leq L(v_n)$. \qedhere
+\end{proof}	  
+
+
 
 \end{document}
