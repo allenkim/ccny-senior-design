@@ -1,0 +1,69 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\geometry{margin=1in}
+
+\pdfinfo{
+	/Authors (Allen Kim, Yeshuchan (Jack), Gautam Ramasubramanian)
+	/Title (Huffman Encoding Proof of Correctness)
+	/Subject(Huffman Encoding)
+}
+
+\title{Question \#1 : Proof of Correctness of Huffman Encoding Problem}
+\author{Allen Kim, Yeshuchan (Jack), Gautam Ramasubramanian}
+\date{October 16, 2016}
+
+\begin{document}
+
+\maketitle
+
+\section*{Problem Statement}
+
+Justify the correctness of the Huffman encoding algorithm: 
+In Huffman Encoding Algorithm (sort the symbols in order and merge the top two symbols iteratively until only one node is left), 
+prove that for two symbols $A$ and $B$ with probabilities,
+$$
+	p(A) \geq p(B)
+$$ 
+then in the result representation sequence according to the Huffman Encoding Procedure,
+the length of symbol $A$ is no longer than that of symbol $B$. In other words, if $L$ is a function the outputs the length of a symbol, then
+$$
+	H(A) \leq H(B)
+$$
+
+\section*{Huffman Encoding Intro}
+
+Suppose we want to encode the following set of symbols - They could be ascii characters, unicode characters, etc. We will denote them as
+$$
+V = {v_1, v_2, v_3 \ldots v_n}
+$$
+We have a file that contains all these symbols, but the frequency with which they appear on the file is different. In fact, let us assume that the following is true.
+$$
+f_1 \leq f_2 \leq f_3 \ldots f_n
+$$ 
+In other words, $v_n$ is the most frequent character in the file we want to encode, and $v_1$ is the least frequeny character in the file.
+
+The Huffman encoding algorithm works as follows. We arrange the symbols in a queue (which is FIFO) in order of least to greatest frequency.
+$$
+Q = \left[ v_1, v_2 \ldots v_n \right]
+$$ 
+
+We pop the first two symbols out and merge them into one symbol. In this case we pop $v_1$ and $v_2$ and merge them to create $v_{1,2}$. The frequency of this merged symbol is the sum of the frequencies of the individual symbols.
+$$
+f_{1,2} = f_1 + f_2
+$$
+We input this merged symbol to the back of the queue, and we sort the queue from least frequency character to greatest frequency character.
+
+Then, we iterate the procedure over and over again, removing the first two symbols, merging them, adding them back to the queue, and sorting the queue. We continue until there is only one symbol remaining in the queue, which is the merger of all the individual symbols.
+
+The Huffman Length, denoted by the function $L$, is the number of times a symbol has been merged throughout the course of the algorithm. We want to prove that
+$$ 
+L(v_i) \geq L(v_j) \qquad (i < j)
+$$
+
+for all $i$ and $j$.
+
+\section{Proof}
+
+\end{document}
