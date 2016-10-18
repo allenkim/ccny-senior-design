@@ -1,0 +1,63 @@
+   1. http://www.google.com/search?hl=en&tbm=isch&source=og&tab=wi
+   2. http://maps.google.com/maps?hl=en&tab=wl
+   3. https://play.google.com/?hl=en&tab=w8
+   4. http://www.youtube.com/results?tab=w1
+   5. http://news.google.com/nwshp?hl=en&tab=wn
+   6. https://mail.google.com/mail/?tab=wm
+   7. https://drive.google.com/?tab=wo
+   8. https://www.google.com/intl/en/options/
+   9. http://www.google.com/history/optout?hl=en
+  10. http://www.google.com/preferences?hl=en
+  11. https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=http://www.google.com/search?q=python
+  12. http://www.google.com/webhp?hl=
+  13. http://www.google.com/advanced_search?q=python&hl=
+  14. http://www.google.com/preferences?q=python&hl=
+  15. http://www.google.com/url?q=https://www.python.org/&sa=U&ved=0ahUKEwix-4TAzNbPAhXCqB4KHRN0BasQFggGMAA&usg=AFQjCNGmnVbDknSqhbM0lNPMg1-OOCl-XQ
+  16. http://webcache.googleusercontent.com/search?q=cache:Fvb7Gz_c4rwJ:https://www.python.org/+python&hl=&ct=clnk
+  17. http://www.google.com/search?q=related:https://www.python.org/&hl=
+  18. http://www.google.com/url?q=https://www.python.org/downloads/&sa=U&ved=0ahUKEwix-4TAzNbPAhXCqB4KHRN0BasQjBAICA&usg=AFQjCNFq9oAADvSLsUAki8EH_eYs3pRIrA
+  19. http://www.google.com/url?q=https://www.python.org/doc/&sa=U&ved=0ahUKEwix-4TAzNbPAhXCqB4KHRN0BasQjBAICg&usg=AFQjCNHllSoCvu3q3F99uX7p_TqqiUP4hg
+  20. http://www.google.com/url?q=https://www.python.org/downloads/windows/&sa=U&ved=0ahUKEwix-4TAzNbPAhXCqB4KHRN0BasQjBAIDA&usg=AFQjCNEzSuIU8_i4ipFshWTsSI-DDbyAsg
+  21. http://www.google.com/url?q=https://wiki.python.org/moin/BeginnersGuide&sa=U&ved=0ahUKEwix-4TAzNbPAhXCqB4KHRN0BasQjBAIDg&usg=AFQjCNEV9dUh0Dv9MFGt67I5-f4n-KMHsw
+  22. http://www.google.com/url?q=https://docs.python.org/&sa=U&ved=0ahUKEwix-4TAzNbPAhXCqB4KHRN0BasQjBAIEA&usg=AFQjCNGVNli2WK7B_1Ynqgt7XhhSRc51-A
+  23. http://www.google.com/url?q=https://www.python.org/about/gettingstarted/&sa=U&ved=0ahUKEwix-4TAzNbPAhXCqB4KHRN0BasQjBAIEg&usg=AFQjCNHCUITp76-jeD9j_LnmJlKBZ0kgsQ
+  24. http://www.google.com/url?q=https://en.wikipedia.org/wiki/Python_(programming_language)&sa=U&ved=0ahUKEwix-4TAzNbPAhXCqB4KHRN0BasQFggVMAc&usg=AFQjCNEyPc1eX-dkQp_DWUwKEEjv1iaoSQ
+  25. http://webcache.googleusercontent.com/search?q=cache:3wRBXLyvECcJ:https://en.wikipedia.org/wiki/Python_(programming_language)+python&hl=&ct=clnk
+  26. http://www.google.com/search?q=related:https://en.wikipedia.org/wiki/Python_(programming_language)&hl=
+  27. http://www.google.com/url?q=https://www.codecademy.com/learn/python&sa=U&ved=0ahUKEwix-4TAzNbPAhXCqB4KHRN0BasQFggYMAg&usg=AFQjCNG6Rc8_gRqHjE64cUOE7tqGPc0UWw
+  28. http://webcache.googleusercontent.com/search?q=cache:VieTLWvITEcJ:https://www.codecademy.com/learn/python+python&hl=&ct=clnk
+  29. http://www.google.com/search?q=related:https://www.codecademy.com/learn/python&hl=
+  30. http://www.google.com/url?q=https://www.tutorialspoint.com/python/&sa=U&ved=0ahUKEwix-4TAzNbPAhXCqB4KHRN0BasQFggaMAk&usg=AFQjCNF0783HMcFokDXSeqKnU1ESQAD7Zw
+  31. http://webcache.googleusercontent.com/search?q=cache:mWd-kiWxLAYJ:https://www.tutorialspoint.com/python/+python&hl=&ct=clnk
+  32. http://www.google.com/search?q=related:https://www.tutorialspoint.com/python/&hl=
+  33. http://www.google.com/news?q=python&hl=
+  34. http://blog.yhat.com/posts/pandasql-intro.html
+  35. https://www.python.org/downloads/release/python-360b2/
+  36. http://www.siasat.com/news/scariest-video-man-uses-leg-bait-catch-python-1039475/
+  37. http://www.google.com/url?q=https://www.reddit.com/r/Python/&sa=U&ved=0ahUKEwix-4TAzNbPAhXCqB4KHRN0BasQFgggMA0&usg=AFQjCNGJOl524JYVbgwzo6AcM01Hafg5HA
+  38. http://webcache.googleusercontent.com/search?q=cache:bBwH-sJKITcJ:https://www.reddit.com/r/Python/+python&hl=&ct=clnk
+  39. http://www.google.com/search?q=related:https://www.reddit.com/r/Python/&hl=
+  40. http://www.google.com/url?q=https://developers.google.com/edu/python/&sa=U&ved=0ahUKEwix-4TAzNbPAhXCqB4KHRN0BasQFggkMA4&usg=AFQjCNF78mLTymdDW8CdP0Sl8g5vKt5XXw
+  41. http://webcache.googleusercontent.com/search?q=cache:dqaaAA86p-kJ:https://developers.google.com/edu/python/+python&hl=&ct=clnk
+  42. http://www.google.com/search?q=related:https://developers.google.com/edu/python/&hl=
+  43. http://www.google.com/search?q=python operator&ct=broad-revision&cd=1&ie=UTF-8
+  44. http://www.google.com/search?q=python @ symbol&ct=broad-revision&cd=2&ie=UTF-8
+  45. http://www.google.com/search?q=python animal&ct=broad-revision&cd=3&ie=UTF-8
+  46. http://www.google.com/search?q=what does % mean in python&ct=broad-revision&cd=4&ie=UTF-8
+  47. http://www.google.com/search?q=python snake&ct=broad-revision&cd=5&ie=UTF-8
+  48. http://www.google.com/search?q=python codecademy&ct=broad-revision&cd=6&ie=UTF-8
+  49. http://www.google.com/search?q=python meaning&ct=broad-revision&cd=7&ie=UTF-8
+  50. http://www.google.com/search?q=python examples&ct=broad-revision&cd=8&ie=UTF-8
+  51. http://www.google.com/search?q=python&ie=UTF-8&prmd=ivnslb&ei=Ht_-V7H0BsLRepPoldgK&start=10&sa=N
+  52. http://www.google.com/search?q=python&ie=UTF-8&prmd=ivnslb&ei=Ht_-V7H0BsLRepPoldgK&start=20&sa=N
+  53. http://www.google.com/search?q=python&ie=UTF-8&prmd=ivnslb&ei=Ht_-V7H0BsLRepPoldgK&start=30&sa=N
+  54. http://www.google.com/search?q=python&ie=UTF-8&prmd=ivnslb&ei=Ht_-V7H0BsLRepPoldgK&start=40&sa=N
+  55. http://www.google.com/search?q=python&ie=UTF-8&prmd=ivnslb&ei=Ht_-V7H0BsLRepPoldgK&start=50&sa=N
+  56. http://www.google.com/search?q=python&ie=UTF-8&prmd=ivnslb&ei=Ht_-V7H0BsLRepPoldgK&start=60&sa=N
+  57. http://www.google.com/search?q=python&ie=UTF-8&prmd=ivnslb&ei=Ht_-V7H0BsLRepPoldgK&start=70&sa=N
+  58. http://www.google.com/search?q=python&ie=UTF-8&prmd=ivnslb&ei=Ht_-V7H0BsLRepPoldgK&start=80&sa=N
+  59. http://www.google.com/search?q=python&ie=UTF-8&prmd=ivnslb&ei=Ht_-V7H0BsLRepPoldgK&start=90&sa=N
+  60. http://www.google.com/search?q=python&ie=UTF-8&prmd=ivnslb&ei=Ht_-V7H0BsLRepPoldgK&start=10&sa=N
+  61. http://www.google.com/language_tools?q=python
+  62. http://www.google.com/intl/en/help.html
+  63. http://www.google.com/
