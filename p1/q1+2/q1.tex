@@ -11,7 +11,7 @@
 }
 
 \title{Question \#1 : Proof of Correctness of Huffman Encoding Problem}
-\author{Allen Kim, Yeshuchan (Jack), Gautam Ramasubramanian}
+\author{Allen Kim, Shuchan (Jack) Ye, Gautam Ramasubramanian}
 \date{October 16, 2016}
 
 \begin{document}
@@ -119,13 +119,23 @@ $$
 
 However, we also know that $L(w_1) - L(w_n) \leq 1$. Therefore, $L(v_3) - L(v_{1,2}) \leq 1$. Here, there are two cases.
 
-\textit{Case 1}
-$L(v_3) - L(v_{1,2}) = 1$. Therefore, $L(v_3) = L(v_{1,2}) + 1 = L(v_1) = L(v_2)$. Since $L(v_3) - L(v_{1,2}) = L(w_1) - L(w_{n-1}) = 1$, we can say that $L(w_1) - L(w_{n-2}) = L(v_3) - L(v_n) \leq 1$. Since $L(v_3) = L(v_1)$, then $L(1) - L(n) \leq 1$ and $L(v_1) \leq L(v_2) \leq \ldots \leq L(v_n)$.
+\textit{Case 1}$L(v_3) - L(v_{1,2}) = 1$.
 
-\textit{Case 2}
-$L(v_3) - L(v_{1,2}) = 0$. Therefore, $L(v_3) + 1 = L(v_1) + L(v_2)$. Since $L(v_3) - L(v_{1,2}) = L(w_1) - L(w_{n-1}) = 0$, we can say that $L(w_1) - L(w_{n-2}) = L(v_3) - L(v_n) = 0$. Therefore, $L(v_1) - L(v_n)  = 1 \leq 1$, and $L(v_1) \leq L(v_2) \leq \ldots \leq L(v_n)$. \qedhere
+Therefore, $L(v_3) = L(v_{1,2}) + 1 = L(v_1) = L(v_2)$. 
+
+Since $L(v_3) - L(v_{1,2}) = L(w_1) - L(w_{n-1}) = 1$, we can say that $L(w_1) - L(w_{n-2}) = L(v_3) - L(v_n) \leq 1$. 
+
+Since $L(v_3) = L(v_1)$, then $L(1) - L(n) \leq 1$ and $L(v_1) \leq L(v_2) \leq \ldots \leq L(v_n)$.
+
+\textit{Case 2}$L(v_3) - L(v_{1,2}) = 0$. 
+
+Therefore, $L(v_3) + 1 = L(v_1) + L(v_2)$. 
+
+Since $L(v_3) - L(v_{1,2}) = L(w_1) - L(w_{n-1}) = 0$, we can say that $L(w_1) - L(w_{n-2}) = L(v_3) - L(v_n) = 0$. 
+
+Therefore, $L(v_1) - L(v_n)  = 1 \leq 1$, and $L(v_1) \leq L(v_2) \leq \ldots \leq L(v_n)$. \qedhere
+
 \end{proof}	  
-
 
 
 \end{document}
