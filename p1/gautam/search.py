@@ -6,15 +6,18 @@ from random import shuffle
 def queryforHTML(enum, query):
 	if (enum == 0):
 		headers={};
-		headers['User-Agent'] = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64)';
-		request = urllib.request.Request('https://www.google.com/search?q='+query, headers=headers);
+		headers['User-Agent'] = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2)';
+		querystring = urllib.parse.urlencode({'q': query})
+		request = urllib.request.Request('https://www.google.com/search?'+querystring, headers=headers);
 		response = urllib.request.urlopen( request );
 		targetstring = response.read().decode("latin-1");
 	elif (enum == 1):
-		response = urllib.request.urlopen('https://www.bing.com?q=python');
+		querystring = urllib.parse.urlencode({'q': query})
+		response = urllib.request.urlopen('https://www.bing.com?' + querystring);
 		targetstring = response.read().decode("latin-1");
 	else:
-		response = urllib.request.urlopen('https://search.yahoo.com/search?p=python');
+		querystring = urllib.parse.urlencode({'p': query})
+		response = urllib.request.urlopen('https://search.yahoo.com/search?' + querystring);
 		target = open('yahoo.html', 'w');
 		targetstring = response.read().decode("latin-1");
 	return targetstring
@@ -80,18 +83,19 @@ def getLinks(enum, query):
 
 
 def randomize(array):
-	shuffle(array)
+	#shuffle(array)
 	arr = {}
-	arr[array[0][0]] = 0
-	arr[array[1][0]] = 1
-	arr[array[2][0]] = 2
+	arr['A'] = array[0]
+	arr['B'] = array[1]
+	arr['C'] = array[2]
 	return arr	
 
 def score(links, real_link):
 	
 	for link in links[:7]:
 		found = link.find(real_link)
-		if found != -1 :
+		found2 = real_link.find(link)
+		if found != -1 or found2 != -1:
 			return found
 		else:	
 			return 7;
