@@ -6,11 +6,14 @@ with open("links.txt","r") as infile:
 with open("links_with_query.txt","a") as outfile:
     count = 1
     for url in links:
-        outfile.write(url)
         a = Article(url.strip(), language='en')
         a.download()
-        a.parse()
+        try:
+            a.parse()
+        except Exception as e:
+            continue
         a.nlp()
+        outfile.write(url)
         outfile.write(a.title)
         outfile.write(a.summary + "\n")
         outfile.write(str(a.keywords) + "\n\n")
